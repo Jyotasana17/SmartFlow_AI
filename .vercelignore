@@ -1,0 +1,8 @@
+backend
+docker
+docs
+scripts
+shared
+venv
+*.log
+*.ps1
