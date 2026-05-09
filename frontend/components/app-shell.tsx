@@ -1,0 +1,33 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import { Navbar } from "@/components/navbar";
+import { Sidebar } from "@/components/sidebar";
+import { AlertTicker } from "@/modules/alerts/alert-ticker";
+import { useRealtime } from "@/hooks/use-realtime";
+
+export function AppShell({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  useRealtime();
+
+  return (
+    <div className="min-h-screen bg-city-grid bg-[length:44px_44px] font-[var(--font-rajdhani)] text-cyan-50">
+      <div className="fixed inset-0 -z-10 bg-hud-radial" />
+      <Navbar />
+      <Sidebar />
+      <main className="min-h-screen px-3 pb-5 pt-20 lg:pl-24">
+        <AlertTicker />
+        <motion.div
+          key={pathname}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35, ease: "easeOut" }}
+          className="mx-auto max-w-[1800px]"
+        >
+          {children}
+        </motion.div>
+      </main>
+    </div>
+  );
+}

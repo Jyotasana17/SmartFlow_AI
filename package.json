@@ -1,0 +1,17 @@
+{
+  "name": "smartflow-ai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend:dev": "npm --prefix frontend run dev",
+    "frontend:build": "npm --prefix frontend run build",
+    "frontend:start": "npm --prefix frontend run start",
+    "backend:dev": "python -m uvicorn backend.api_gateway.main:socket_app --host 0.0.0.0 --port 8000 --reload",
+    "backend:compile": "python -m compileall backend",
+    "docker:up": "docker compose up --build",
+    "validate": "npm --prefix frontend run build && python -m compileall backend"
+  },
+  "workspaces": [
+    "frontend"
+  ]
+}
