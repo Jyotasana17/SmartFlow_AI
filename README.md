@@ -225,8 +225,6 @@ Advanced tracking capabilities across urban infrastructure:
 | **GitHub Actions** | CI/CD pipeline automation |
 
 ---
-## Team Name
- Bug Smashers
 
 ## 📁 Project Structure
 
@@ -1124,7 +1122,7 @@ limitations under the License.
 
 ### Contributors
 
-Thanks to all contributors who have helped bring SmartFlow AI to life:
+Thanks to all contributors who have helped bring SmartFlow AI to life: ## Team Name: Bug Smashers
 
 - [Jyotasana17](https://github.com/Jyotasana17)
 - [Arpita577-byte](https://github.com/Arpita577-byte)
