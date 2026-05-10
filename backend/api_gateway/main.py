@@ -18,6 +18,7 @@ from backend.api_gateway.routers import (
     signals,
     swarm,
 )
+from backend.ai_assistant_service.routes import router as assistant_router
 from backend.shared.config import get_settings
 from backend.shared.logging import configure_logging, get_logger
 from backend.websocket_service.socket_manager import SocketManager
@@ -76,5 +77,6 @@ app.include_router(signals.router, prefix="/api/v1/signals", tags=["Signal Contr
 app.include_router(prediction.router, prefix="/api/v1/predictions", tags=["Prediction"])
 app.include_router(analytics.router, prefix="/api/v1/analytics", tags=["Analytics"])
 app.include_router(swarm.router, prefix="/api/v1/swarm", tags=["Swarm Communication"])
+app.include_router(assistant_router)
 
 socket_app = socketio.ASGIApp(socket_manager.sio, other_asgi_app=app, socketio_path="/socket.io")

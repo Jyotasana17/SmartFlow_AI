@@ -7,6 +7,9 @@ import { Sidebar } from "@/components/sidebar";
 import { AlertTicker } from "@/modules/alerts/alert-ticker";
 import { useRealtime } from "@/hooks/use-realtime";
 import { cn } from "@/lib/utils";
+import { FloatingAssistant } from "@/modules/ai/command-assistant/FloatingAssistant";
+import { ChatPanel } from "@/modules/ai/command-assistant/ChatPanel";
+import { VoiceControl } from "@/modules/ai/command-assistant/VoiceControl";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -40,6 +43,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           {children}
         </motion.div>
       </main>
+      <VoiceControl />
+      <ChatPanel />
+      <FloatingAssistant />
     </div>
   );
 }

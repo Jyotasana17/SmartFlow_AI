@@ -15,5 +15,6 @@ frontend/.env.local
 dev-server.log
 *.tsbuildinfo
 .vercel/
+.netlify/
 postgres_data/
 mongo_data/

@@ -1,0 +1,22 @@
+# Smart City Traffic Rules & Regulations v1.2
+
+## Section 1: Emergency Vehicle Priority
+Emergency vehicles (ambulances, fire trucks, police) always have the highest priority in the SmartFlow AI system.
+When an emergency vehicle is detected within 500 meters of a junction, the AI system must:
+1. Identify the vehicle's trajectory.
+2. Synchronize green signals along the emergency corridor.
+3. Halt conflicting traffic flows to ensure clear passage.
+4. Notify the command assistant of the activation.
+
+## Section 2: Congestion Management
+Congestion is defined as vehicle density exceeding 75% of lane capacity.
+In cases of severe congestion (density > 90%), the AI controller should:
+- Extend green phase timings by up to 20 seconds.
+- Trigger AI rerouting suggestions for incoming traffic.
+- Coordinate with adjacent junctions to balance load.
+
+## Section 3: Accident Protocols
+In the event of a detected accident:
+- Immediately switch the affected junction to 'Safe Mode' (all-red or blinking amber).
+- Alert emergency services via the notification module.
+- The Command Assistant should provide the operator with the nearest available detour routes.
