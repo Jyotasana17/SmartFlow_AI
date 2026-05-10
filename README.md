@@ -56,16 +56,6 @@ SmartFlow AI operates on the principle that technology should serve humanity. Th
 
 ## ✨ Features
 
-### 🎯 Human-Centric Dashboard
-
-The intuitive HUD (Head-Up Display) interface presents critical information with a focus on user experience:
-
-- **Driver Stress Biosignatures**: Real-time monitoring of driver stress levels using biometric data
-- **Road Rage Reduction Analytics**: AI-powered metrics to reduce aggressive driving behaviors
-- **Citizen Satisfaction Metrics**: Track public perception and satisfaction with traffic flow
-- **Wellness Tracking**: Integration with wearable devices for comprehensive driver health monitoring
-- **Customizable Views**: Personalized dashboard configurations for different user roles (traffic operators, city planners, citizens)
-
 ### 🤖 AI-Driven Traffic Optimization
 
 Sophisticated machine learning algorithms work behind the scenes:
