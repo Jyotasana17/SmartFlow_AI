@@ -1197,25 +1197,25 @@ This project draws inspiration from:
 
 ## 🗺️ Roadmap
 
-### Q1 2025
+
 - [ ] Mobile app (iOS/Android)
 - [ ] Advanced ML models for stress prediction
 - [ ] Integration with public transportation
 - [ ] Multi-language support
 
-### Q2 2025
+
 - [ ] Machine learning model improvements
 - [ ] Real-time traffic incident detection
 - [ ] Advanced analytics dashboard
 - [ ] Third-party integrations (Google Maps, etc.)
 
-### Q3 2025
+
 - [ ] Autonomous vehicle integration
 - [ ] Drone-based traffic monitoring
 - [ ] AI-powered chatbot support
 - [ ] Blockchain for transparent reporting
 
-### Q4 2025
+
 - [ ] Global traffic network federation
 - [ ] Advanced predictive analytics
 - [ ] IoT device support expansion
