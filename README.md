@@ -224,7 +224,7 @@ SmartFlow_AI/
 ├── frontend/                          # Next.js Application
 │   ├── app/
 │   │   ├── (dashboard)/              # Dashboard routes
-│   │   ├── (human-centric)/          # Human-centric views
+│   │   |
 │   │   ├── (monitoring)/             # Real-time monitoring
 │   │   ├── api/                      # API routes
 │   │   ├── layout.tsx                # Root layout
