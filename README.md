@@ -10,7 +10,7 @@
 
 **A revolutionary AI-powered traffic management platform that prioritizes human well-being while optimizing urban mobility.**
 
-[Live Demo](#deployment) • [Features](#-features) • [Installation](#-getting-started) • [Architecture](#-architecture) • [Contributing](#-contributing)
+[Features](#-features) • [Installation](#-getting-started) • [Architecture](#-architecture) • [Contributing](#-contributing)
 
 Live link : https://6a001422af93ba791ea2d999--smartflowaibugsmashers.netlify.app/
 </div>
