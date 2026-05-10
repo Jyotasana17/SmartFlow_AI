@@ -221,174 +221,153 @@ Advanced tracking capabilities across urban infrastructure:
 
 ```
 SmartFlow_AI/
-├── frontend/                          # Next.js Application
-│   ├── app/
-│   │   ├── (dashboard)/              # Dashboard routes
-│   │   |
-│   │   ├── (monitoring)/             # Real-time monitoring
-│   │   ├── api/                      # API routes
-│   │   ├── layout.tsx                # Root layout
-│   │   └── page.tsx                  # Home page
+│
+├── frontend/                        # Next.js 15 Application
+│   ├── app/                         # App Router pages
+│   │   ├── dashboard/               # Main dashboard
+│   │   ├── analytics/               # Analytics pages
+│   │   ├── settings/                # Configuration
+│   │   ├── layout.tsx               # Root layout
+│   │   └── page.tsx                 # Home page
 │   │
-│   ├── components/
-│   │   ├── ui/                       # Reusable UI components
-│   │   │   ├── Button.tsx
-│   │   │   ├── Card.tsx
-│   │   │   ├── Chart.tsx
-│   │   │   ├── Gauge.tsx
-│   │   │   └── ...
-│   │   ├── Dashboard/                # Dashboard-specific components
-│   │   ├── Header/                   # Header and navigation
-│   │   ├── Sidebar/                  # Sidebar navigation
-│   │   └── ...
+│   ├── components/                  # Reusable components
+│   │   ├── Dashboard/               # Dashboard-specific
+│   │   │   ├── TrafficMap.tsx
+│   │   │   ├── StressMonitor.tsx
+│   │   │   └── EmergencyAlert.tsx
+│   │   │
+│   │   ├── Charts/                  # Data visualization
+│   │   │   ├── TrafficChart.tsx
+│   │   │   ├── EmissionsChart.tsx
+│   │   │   └── StressChart.tsx
+│   │   │
+│   │   ├── Common/                  # Shared components
+│   │   │   ├── Header.tsx
+│   │   │   ├── Sidebar.tsx
+│   │   │   └── Footer.tsx
+│   │   │
+│   │   └── Map/                     # Map components
+│   │       ├── IntersectionMap.tsx
+│   │       └── HeatMap.tsx
 │   │
-│   ├── modules/
-│   │   ├── Monitoring/               # Traffic monitoring features
-│   │   │   ├── TrafficFlow.tsx
-│   │   │   ├── SignalControl.tsx
-│   │   │   └── RealTimeAnalytics.tsx
-│   │   ├── AI/                       # AI feature module
-│   │   │   ├── Predictions.tsx
-│   │   │   ├── Optimization.tsx
-│   │   │   └── MLInsights.tsx
-│   │   |           
-│   │   │   
-│   │   │   
-│   │   │  
-│   │   └── ...
+│   ├── modules/                     # Feature modules
+│   │   ├── monitoring/              # Real-time monitoring
+│   │   │   ├── useMonitoring.ts
+│   │   │   └── trafficSlice.ts
+│   │   │
+│   │   ├── ai-optimization/         # AI features
+│   │   │   ├── useAIOptimization.ts
+│   │   │   └── optimizationSlice.ts
+│   │   │
+│   │   └── human-centric/           # Human-centric features
+│   │       ├── useStressMonitoring.ts
+│   │       └── stressSlice.ts
 │   │
-│   ├── store/
-│   │   ├── trafficStore.ts           # Zustand traffic state
-│   │   ├── uiStore.ts                # UI state management
-│   │   ├── authStore.ts              # Authentication state
-│   │   └── socketStore.ts            # WebSocket state
+│   ├── store/                       # Zustand stores
+│   │   ├── trafficStore.ts
+│   │   ├── uiStore.ts
+│   │   └── authStore.ts
 │   │
-│   ├── hooks/
+│   ├── hooks/                       # Custom React hooks
+│   │   ├── useWebSocket.ts
 │   │   ├── useTraffic.ts
-│   │   ├── useSocket.ts
-│   │   ├── useAuth.ts
-│   │   └── ...
+│   │   └── useLocalStorage.ts
 │   │
-│   ├── utils/
-│   │   ├── api.ts                    # API helper functions
-│   │   ├── socket.ts                 # Socket.IO setup
-│   │   ├── formatters.ts             # Data formatting
-│   │   └── validators.ts             # Input validation
+│   ├── utils/                       # Utility functions
+│   │   ├── api.ts
+│   │   ├── constants.ts
+│   │   └── formatters.ts
 │   │
-│   ├── styles/
-│   │   ├── globals.css               # Global styles
-│   │   ├── variables.css             # CSS variables
-│   │   └── animations.css            # Animation definitions
+│   ├── styles/                      # Global styles
+│   │   ├── globals.css
+│   │   └── variables.css
 │   │
-│   ├── public/                        # Static assets
+│   ├── public/                      # Static assets
 │   │   ├── images/
 │   │   ├── icons/
-│   │   └── ...
+│   │   └── models/
 │   │
-│   ├── .env.example                  # Environment variables template
-│   ├── next.config.js                # Next.js configuration
-│   ├── tsconfig.json                 # TypeScript configuration
-│   ├── tailwind.config.js            # Tailwind CSS configuration
-│   └── package.json                  # Dependencies
+│   ├── next.config.js               # Next.js config
+│   ├── tailwind.config.js            # Tailwind config
+│   ├── tsconfig.json                # TypeScript config
+│   └── package.json                 # Dependencies
 │
-├── backend/                           # Python FastAPI Application
-│   ├── api_gateway/
-│   │   ├── main.py                   # Application entry point
-│   │   ├── config.py                 # Configuration management
-│   │   └── middleware.py             # Custom middleware
+├── backend/                         # Python FastAPI Application
+│   ├── api_gateway/                 # API entry point
+│   │   ├── main.py                  # FastAPI app & Socket.IO
+│   │   └── config.py                # Configuration
 │   │
-│   ├── models/
-│   │   ├── traffic.py                # Traffic data models
-│   │   ├── signal.py                 # Signal control models
-│   │   ├── user.py                   # User models
-│   │   ├── prediction.py             # Prediction models
-│   │   └── schemas.py                # Pydantic schemas
+│   ├── routes/                      # API endpoints
+│   │   ├── traffic.py               # Traffic routes
+│   │   ├── vehicles.py              # Vehicle routes
+│   │   ├── ai.py                    # AI/ML routes
+│   │   ├── analytics.py             # Analytics routes
+│   │   └── health.py                # Health checks
 │   │
-│   ├── services/
-│   │   ├── traffic_service.py        # Traffic management logic
-│   │   ├── signal_service.py         # Signal control logic
-│   │   ├── ai_service.py             # AI/ML integration
-│   │   ├── detection_service.py      # YOLOv11 detection
-│   │   ├── routing_service.py        # Emergency routing
-│   │   └── analytics_service.py      # Data analytics
+│   ├── models/                      # Data models
+│   │   ├── traffic.py               # Traffic models
+│   │   ├── vehicle.py               # Vehicle models
+│   │   └── schemas.py               # Pydantic schemas
 │   │
-│   ├── routes/
-│   │   ├── traffic.py                # Traffic endpoints
-│   │   ├── signals.py                # Signal endpoints
-│   │   ├── predictions.py            # Prediction endpoints
-│   │   ├── analytics.py              # Analytics endpoints
-│   │   ├── emergency.py              # Emergency endpoints
-│   │   └── health.py                 # Health check endpoints
+│   ├── services/                    # Business logic
+│   │   ├── traffic_service.py       # Traffic optimization
+│   │   ├── vehicle_service.py       # Vehicle detection
+│   │   ├── ai_service.py            # AI/ML management
+│   │   ├── event_service.py         # Real-time events
+│   │   └── analytics_service.py     # Analytics logic
 │   │
-│   ├── ml/
-│   │   ├── detection/
-│   │   │   ├── yolov11_detector.py   # YOLOv11 implementation
-│   │   │   └── preprocessor.py       # Image preprocessing
-│   │   ├── optimization/
-│   │   │   ├── rl_agent.py           # RL/PPO agent
-│   │   │   ├── signal_optimizer.py   # Signal optimization logic
-│   │   │   └── reward_function.py    # RL reward calculations
-│   │   ├── prediction/
-│   │   │   ├── traffic_predictor.py  # Traffic forecasting
-│   │   │   └── stress_analyzer.py    # Driver stress analysis
-│   │   └── models/                   # Pre-trained model files
+│   ├── database/                    # Database layer
+│   │   ├── db.py                    # DB connection
+│   │   ├── session.py               # Session management
+│   │   └── models.py                # SQLAlchemy models
 │   │
-│   ├── database/
-│   │   ├── connection.py             # Database connections
-│   │   ├── models.py                 # SQLAlchemy models
-│   │   ├── migrations/               # Alembic migrations
-│   │   └── seeds.py                  # Database seeds
+│   ├── ml/                          # ML/AI modules
+│   │   ├── detection.py             # YOLOv11 detection
+│   │   ├── optimization.py          # PPO algorithm
+│   │   ├── models/                  # Pre-trained models
+│   │   └── utils.py                 # ML utilities
 │   │
-│   ├── sockets/
-│   │   ├── events.py                 # Socket event handlers
-│   │   ├── namespaces.py             # Socket namespaces
-│   │   └── authentication.py         # Socket auth
+│   ├── utils/                       # Utilities
+│   │   ├── logger.py                # Logging config
+│   │   ├── validators.py            # Data validation
+│   │   └── helpers.py               # Helper functions
 │   │
-│   ├── utils/
-│   │   ├── helpers.py                # Utility functions
-│   │   ├── validators.py             # Input validators
-│   │   ├── decorators.py             # Custom decorators
-│   │   └── logger.py                 # Logging setup
-│   │
-│   ├── tests/
-│   │   ├── test_api.py
-│   │   ├── test_services.py
-│   │   ├── test_ml.py
-│   │   └── conftest.py               # Test configuration
-│   │
-│   ├── Dockerfile                    # Docker container definition
-│   ├── requirements.txt              # Python dependencies
-│   └── .env.example                  # Environment template
+│   ├── requirements.txt             # Python dependencies
+│   ├── Dockerfile                   # Container config
+│   └── .dockerignore                # Docker ignore rules
 │
-├── shared/
-│   ├── types.ts                      # Shared TypeScript types
-│   ├── constants.ts                  # Shared constants
-│   ├── interfaces.ts                 # Shared interfaces
-│   └── utils.ts                      # Shared utility functions
+├── shared/                          # Shared code
+│   ├── types/                       # TypeScript types
+│   │   ├── traffic.ts
+│   │   ├── vehicle.ts
+│   │   └── api.ts
+│   │
+│   └── utils/                       # Shared utilities
+│       ├── constants.ts
+│       └── helpers.ts
 │
-├── scripts/
-│   ├── setup.sh                      # Initial setup script
-│   ├── seed_data.sh                  # Database seeding
-│   ├── migrate.sh                    # Database migrations
-│   └── deploy.sh                     # Deployment script
+├── scripts/                         # Utility scripts
+│   ├── setup.sh                     # Setup script
+│   ├── migrate.py                   # DB migration
+│   └── docker-entrypoint.sh         # Docker entry
 │
-├── docs/
-│   ├── README.md                     # Documentation index
-│   ├── ARCHITECTURE.md               # Architecture deep-dive
-│   ├── API.md                        # API documentation
-│   ├── ML_MODELS.md                  # ML models documentation
-│   ├── DEPLOYMENT.md                 # Deployment guide
-│   └── CONTRIBUTING.md               # Contributing guide
+├── docs/                            # Documentation
+│   ├── API.md                       # API documentation
+│   ├── ARCHITECTURE.md              # Architecture guide
+│   ├── DEPLOYMENT.md                # Deployment guide
+│   ├── CONTRIBUTING.md              # Contributing guide
+│   └── TROUBLESHOOTING.md           # Troubleshooting
 │
-├── .env.example                      # Environment variables template
-├── .gitignore                        # Git ignore rules
-├── .vercelignore                     # Vercel ignore rules
-├── docker-compose.yml                # Docker compose configuration
-├── netlify.toml                      # Netlify configuration
-├── vercel.json                       # Vercel configuration
-├── package.json                      # Root package.json
-├── package-lock.json                 # Dependency lock file
-└── README.md                         # Main documentation
+├── docker-compose.yml               # Docker Compose setup
+├── .env.example                     # Environment template
+├── .gitignore                       # Git ignore rules
+├── .eslintrc.json                   # ESLint config
+├── .prettierrc                      # Prettier config
+├── package.json                     # Root package
+├── package-lock.json                # Dependency lock
+├── tsconfig.json                    # TypeScript config
+├── README.md                        # This file
+└── LICENSE                          # Apache 2.0 License
 ```
 
 ### Key Directory Functions
