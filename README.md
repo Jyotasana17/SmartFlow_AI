@@ -1126,7 +1126,7 @@ Thanks to all contributors who have helped bring SmartFlow AI to life: Team: Bug
 
 - [Jyotasana17](https://github.com/Jyotasana17)
 - [Arpita577-byte](https://github.com/Arpita577-byte)
-- 
+- [bhoomikarai715](https://github.com/bhoomikarai715)
 
 ## 🗺️ Roadmap
 
