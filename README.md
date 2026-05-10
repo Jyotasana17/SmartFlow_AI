@@ -224,6 +224,8 @@ Advanced tracking capabilities across urban infrastructure:
 | **GitHub Actions** | CI/CD pipeline automation |
 
 ---
+## Team Name
+ Bug Smashers
 
 ## 📁 Project Structure
 
