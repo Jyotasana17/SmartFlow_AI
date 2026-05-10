@@ -1,12 +1,9 @@
 [build]
+  base = "frontend"
   command = "npm run build"
-  publish = "frontend/out"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "20"
   NETLIFY_SKIP_NEXTJS_PLUGIN = "true"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-  [plugins.inputs]
-    disable = true
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
