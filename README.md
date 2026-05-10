@@ -19,7 +19,6 @@ Live link : https://6a001422af93ba791ea2d999--smartflowaibugsmashers.netlify.app
 
 ## 📋 Table of Contents
 
-- [Demo Video ]
 - [Overview](#overview)
 - [✨ Features](#-features)
 - [🏗️ Architecture](#️-architecture)
