@@ -251,10 +251,10 @@ SmartFlow_AI/
 │   │   │   ├── Predictions.tsx
 │   │   │   ├── Optimization.tsx
 │   │   │   └── MLInsights.tsx
-│   │   ├── HumanCentric/             # Human-centric features
-│   │   │   ├── StressMonitoring.tsx
-│   │   │   ├── WellnessTracker.tsx
-│   │   │   └── CitizenSatisfaction.tsx
+│   │   |           
+│   │   │   
+│   │   │   
+│   │   │  
 │   │   └── ...
 │   │
 │   ├── store/
