@@ -1,6 +1,6 @@
-# SmartFlow AI - Human-Centric Traffic Management
+# SmartFlow_AI - Human-Centric Traffic Management
 
-SmartFlow AI is a cutting-edge, AI-powered traffic management platform designed to optimize urban mobility while prioritizing the human experience. Unlike traditional systems, SmartFlow AI monitors real-time driver stress, environmental impact, and emergency vehicle priority to create a safer, more efficient city.
+SmartFlow_AI is a cutting-edge, AI-powered traffic management platform designed to optimize urban mobility while prioritizing the human experience. Unlike traditional systems, SmartFlow AI monitors real-time driver stress, environmental impact, and emergency vehicle priority to create a safer, more efficient city.
 
 ## 🚀 Features
 
