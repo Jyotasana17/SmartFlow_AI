@@ -794,7 +794,6 @@ docker-compose -f docker-compose.prod.yml up -d
 - **Dashboard**: Main control center with real-time traffic data
 - **TrafficFlow**: Visualization of traffic patterns and flow
 - **SignalControl**: Manual and automatic traffic signal controls
-- **StressMonitor**: Real-time driver stress level tracking
 - **EmergencyRouter**: Emergency vehicle routing visualization
 - **EnvironmentalImpact**: CO₂ and fuel savings tracking
 - **VoiceInterface**: Voice command input system
@@ -839,9 +838,6 @@ POST       /api/emergency/activate      - Activate emergency mode
 GET        /api/emergency/corridor      - Get emergency corridor
 POST       /api/emergency/report        - Report emergency
 
-# Health
-GET        /api/health                  - Service health check
-GET        /api/status                  - System status
 ```
 
 ---
@@ -920,19 +916,7 @@ agent.update()  # PPO update
 - Anomaly detection
 - Seasonal pattern learning
 
-### Driver Stress Analysis
 
-**Purpose**: Monitor and reduce driver stress levels
-
-**Data Sources:**
-- Heart rate variability
-- Skin conductance
-- Eye tracking
-- Vehicle telemetry
-
-**Output**: Stress level (0-100), recommendations
-
----
 
 ## 🔌 API Documentation
 
@@ -1141,36 +1125,9 @@ limitations under the License.
 
 Thanks to all contributors who have helped bring SmartFlow AI to life:
 
-- [Jyotasana17](https://github.com/Jyotasana17) - Project Creator and Lead Developer
-- [Your Name Here] - Feel free to contribute!
-
-### Inspiration
-
-This project draws inspiration from:
-- Intelligent Transportation Systems (ITS)
-- Human-Centered Design principles
-- Environmental Sustainability initiatives
-- Emergency Services optimization
-
----
-
-## 📞 Contact & Support
-
-### Communication Channels
-
-- **GitHub Issues**: Report bugs and request features
-- **Discussions**: General questions and discussions
-- **Email**: [Add your email]
-- **Discord/Slack**: [Add community server]
-
-### Getting Help
-
-1. Check existing documentation in `/docs`
-2. Search existing issues and discussions
-3. Ask in our community channels
-4. Open a new issue if needed
-
----
+- [Jyotasana17](https://github.com/Jyotasana17)
+- [Arpita577-byte](https://github.com/Arpita577-byte)
+- 
 
 ## 🗺️ Roadmap
 
