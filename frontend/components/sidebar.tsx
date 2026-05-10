@@ -12,6 +12,7 @@ import {
   Radio,
   Settings,
   SlidersHorizontal,
+  UserCircle,
   Waypoints,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -25,6 +26,7 @@ const nav = [
   { href: "/simulation", label: "Simulation", icon: Waypoints },
   { href: "/analytics", label: "Analytics", icon: BarChart3 },
   { href: "/alerts", label: "Alerts", icon: AlertTriangle },
+  { href: "/human-centric", label: "Human-Centric", icon: UserCircle },
   { href: "/admin", label: "Settings", icon: Settings },
 ];
 
