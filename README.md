@@ -120,7 +120,8 @@ Advanced tracking capabilities across urban infrastructure:
 ## 🏗️ Architecture
 
 ### System Architecture Overview
-<img width="1408" height="768" alt="WhatsApp Image 2026-05-10 at 6 29 36 PM" src="https://github.com/user-attachments/assets/5a612cb8-b164-4fd6-b0a5-eb60127a348d" />
+<img width="1407" height="691" alt="image" src="https://github.com/user-attachments/assets/f6a468c8-b8aa-4f6e-99a0-e44fa8d5630d" />
+
 
 
 ### Data Flow Architecture
