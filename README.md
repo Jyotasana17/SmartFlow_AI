@@ -1122,7 +1122,7 @@ limitations under the License.
 
 ### Contributors
 
-Thanks to all contributors who have helped bring SmartFlow AI to life: ## Team Name: Bug Smashers
+Thanks to all contributors who have helped bring SmartFlow AI to life: Team: Bug Smashers
 
 - [Jyotasana17](https://github.com/Jyotasana17)
 - [Arpita577-byte](https://github.com/Arpita577-byte)
