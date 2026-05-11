@@ -35,6 +35,8 @@ export interface BackendSignalChanged {
 }
 
 export interface BackendEmergencyEvent {
+  junction_id?: string;
+  target_id?: string;
   corridor_status?: string;
   estimated_time_saved_mins?: number;
   route?: string[];

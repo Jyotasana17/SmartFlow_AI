@@ -45,6 +45,13 @@ export interface AIDecision {
   reasons: string[];
 }
 
+export interface CameraStream {
+  id: string;
+  lane: "north" | "south" | "east" | "west" | "overhead";
+  url: string;
+  type: "video" | "stream" | "mock";
+}
+
 export interface Junction {
   id: string;
   name: string;
@@ -56,6 +63,7 @@ export interface Junction {
   queue: QueueState;
   signal: SignalState;
   aiDecision: AIDecision;
+  cameras?: CameraStream[];
 }
 
 export interface TrafficRoute {

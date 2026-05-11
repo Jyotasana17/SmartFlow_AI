@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useAssistantStore } from "@/store/assistant-store";
-import { socket_manager } from "@/services/realtime"; // Assuming this is where socket is
 
 export const useAssistantRealtime = () => {
   const { addMessage, isOpen } = useAssistantStore();

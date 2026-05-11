@@ -26,6 +26,12 @@ export const junctions: Junction[] = [
         "Bus lane spillover risk detected near market entry",
       ],
     },
+    cameras: [
+      { id: "cam-01-n", lane: "north", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-traffic-in-a-busy-city-at-night-4521-large.mp4" },
+      { id: "cam-01-s", lane: "south", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-busy-street-in-the-city-at-night-4519-large.mp4" },
+      { id: "cam-01-e", lane: "east", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-busy-city-street-4518-large.mp4" },
+      { id: "cam-01-w", lane: "west", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-cars-driving-on-a-busy-city-street-4517-large.mp4" },
+    ],
   },
   {
     id: "j-02",
@@ -50,6 +56,12 @@ export const junctions: Junction[] = [
         "Downstream camera confirms available receiving capacity",
       ],
     },
+    cameras: [
+      { id: "cam-02-n", lane: "north", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-traffic-in-a-busy-city-at-night-4521-large.mp4" },
+      { id: "cam-02-s", lane: "south", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-busy-street-in-the-city-at-night-4519-large.mp4" },
+      { id: "cam-02-e", lane: "east", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-busy-city-street-4518-large.mp4" },
+      { id: "cam-02-w", lane: "west", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-cars-driving-on-a-busy-city-street-4517-large.mp4" },
+    ],
   },
   {
     id: "j-03",
@@ -74,6 +86,12 @@ export const junctions: Junction[] = [
         "Adjacent lanes can absorb temporary red extension",
       ],
     },
+    cameras: [
+      { id: "cam-03-n", lane: "north", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-traffic-in-a-busy-city-at-night-4521-large.mp4" },
+      { id: "cam-03-s", lane: "south", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-busy-street-in-the-city-at-night-4519-large.mp4" },
+      { id: "cam-03-e", lane: "east", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-busy-city-street-4518-large.mp4" },
+      { id: "cam-03-w", lane: "west", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-cars-driving-on-a-busy-city-street-4517-large.mp4" },
+    ],
   },
   {
     id: "j-04",
@@ -98,6 +116,12 @@ export const junctions: Junction[] = [
         "Pedestrian demand is rising near metro exit",
       ],
     },
+    cameras: [
+      { id: "cam-04-n", lane: "north", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-traffic-in-a-busy-city-at-night-4521-large.mp4" },
+      { id: "cam-04-s", lane: "south", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-busy-street-in-the-city-at-night-4519-large.mp4" },
+      { id: "cam-04-e", lane: "east", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-busy-city-street-4518-large.mp4" },
+      { id: "cam-04-w", lane: "west", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-cars-driving-on-a-busy-city-street-4517-large.mp4" },
+    ],
   },
   {
     id: "j-05",
@@ -122,6 +146,12 @@ export const junctions: Junction[] = [
         "Ride-share pickup zone is nearing saturation",
       ],
     },
+    cameras: [
+      { id: "cam-05-n", lane: "north", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-traffic-in-a-busy-city-at-night-4521-large.mp4" },
+      { id: "cam-05-s", lane: "south", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-busy-street-in-the-city-at-night-4519-large.mp4" },
+      { id: "cam-05-e", lane: "east", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-busy-city-street-4518-large.mp4" },
+      { id: "cam-05-w", lane: "west", type: "video", url: "https://assets.mixkit.co/videos/preview/mixkit-cars-driving-on-a-busy-city-street-4517-large.mp4" },
+    ],
   },
 ];
 

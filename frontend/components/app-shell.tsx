@@ -10,9 +10,17 @@ import { cn } from "@/lib/utils";
 import { FloatingAssistant } from "@/modules/ai/command-assistant/FloatingAssistant";
 import { ChatPanel } from "@/modules/ai/command-assistant/ChatPanel";
 import { VoiceControl } from "@/modules/ai/command-assistant/VoiceControl";
+import { useEffect, useState } from "react";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+  
+  useEffect(() => {
+    setMounted(true);
+    console.log("AppShell mounted. Assistant components should render.");
+  }, []);
+
   useRealtime();
 
   const isHumanCentric = pathname?.startsWith("/human-centric");
@@ -43,9 +51,13 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           {children}
         </motion.div>
       </main>
-      <VoiceControl />
-      <ChatPanel />
-      <FloatingAssistant />
+      {mounted && (
+        <>
+          <VoiceControl />
+          <ChatPanel />
+          <FloatingAssistant />
+        </>
+      )}
     </div>
   );
 }
