@@ -43,7 +43,7 @@ SmartFlow AI is a cutting-edge, **AI-powered traffic management platform** desig
  
 - **Monitors real-time driver stress** using biosignatures
 - **Optimizes signal timing** with deep learning algorithms
-- **Prioritizes emergency vehicles** with automated "green wave" corridors
+- **Prioritizes emergency vehicles** with automated "blue wave" corridors
 - **Tracks environmental impact** in real-time
 - **Reduces road rage** through human-centric design
 - **Enhances citizen satisfaction** with smart city integration
