@@ -58,7 +58,7 @@ SmartFlow AI operates on the principle that technology should serve humanity. Th
 
 - **Real-time Monitoring**: 24/7 traffic pattern analysis
 - **AI-Driven Optimization**: Deep learning-based signal phase adjustment
-- **Emergency Response**: Automated green wave corridors for ambulances and fire trucks
+- **Emergency Response**: Automated blue wave corridors for ambulances and fire trucks
 - **Environmental Impact**: Continuous CO₂ and fuel consumption tracking
 
 ---
