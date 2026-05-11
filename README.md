@@ -41,7 +41,7 @@ Live link : https://6a001422af93ba791ea2d999--smartflowaibugsmashers.netlify.app
 
 SmartFlow AI is a cutting-edge, **AI-powered traffic management platform** designed to optimize urban mobility while prioritizing the human experience. Unlike traditional reactive systems, SmartFlow AI:
  
-- **Monitors real-time driver stress** using biosignatures
+
 - **Optimizes signal timing** with deep learning algorithms
 - **Prioritizes emergency vehicles** with automated "blue wave" corridors
 - **Tracks environmental impact** in real-time
